@@ -1,0 +1,348 @@
+/* Základní reset / typografie */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif;
+  color: #111827;
+  background-color: #f3f4f6;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Kontejner na obsah (max šířka) */
+main {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 3rem;
+}
+
+/* Horní navigace */
+.top-nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background-color: #111827;
+  color: #f9fafb;
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.top-nav a {
+  color: #f9fafb;
+  font-size: 0.9rem;
+}
+
+.top-nav-left,
+.top-nav-right {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.top-nav-center {
+  text-align: center;
+  flex: 1;
+}
+
+.site-title {
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.95rem;
+}
+
+/* Newsletter v headeru */
+.newsletter-link {
+  border: 1px solid #f9fafb;
+  border-radius: 999px;
+  padding: 0.3rem 0.9rem;
+  font-size: 0.85rem;
+}
+
+/* Lišta s tématy */
+.topic-bar {
+  background-color: #111827;
+  color: #e5e7eb;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  overflow-x: auto;
+}
+
+.topic-label {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.topic-bar a {
+  font-size: 0.9rem;
+  white-space: nowrap;
+  padding: 0.2rem 0.5rem;
+  border-radius: 999px;
+}
+
+.topic-bar a:hover {
+  background-color: #374151;
+}
+
+/* Featured sekce – hlavní článek + 3 menší */
+.featured-section {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1.4fr);
+  gap: 2rem;
+}
+
+/* Hlavní článek */
+.featured-main {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+}
+
+.featured-main .badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #2563eb;
+  margin-bottom: 0.5rem;
+}
+
+.featured-main h1 {
+  font-size: 1.65rem;
+  margin: 0 0 0.75rem;
+}
+
+.featured-main p {
+  font-size: 0.95rem;
+  color: #4b5563;
+}
+
+.featured-main .read-more {
+  display: inline-block;
+  margin-top: 1rem;
+  font-weight: 600;
+  color: #2563eb;
+}
+
+/* Tři menší články vedle */
+.featured-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.featured-small {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+}
+
+.featured-small h2 {
+  font-size: 1.05rem;
+  margin: 0 0 0.5rem;
+}
+
+.featured-small p {
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+
+.featured-small .read-more {
+  display: inline-block;
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #2563eb;
+}
+
+/* Průvodce pro začátečníky */
+.beginners-section {
+  margin-top: 3rem;
+}
+
+.section-header h2 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.section-header p {
+  margin: 0.3rem 0 1.5rem;
+  color: #4b5563;
+  font-size: 0.95rem;
+}
+
+/* Grid 6 článků – responzivní */
+.beginners-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.guide-card {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+}
+
+.guide-card .tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #6b7280;
+  margin-bottom: 0.25rem;
+}
+
+.guide-card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+}
+
+.guide-card p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+
+.guide-card .read-more {
+  display: inline-block;
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #2563eb;
+}
+
+/* Slovník (zatím jen základ) */
+.dictionary-section {
+  margin-top: 3rem;
+}
+
+/* Newsletter blok dole */
+.newsletter-section {
+  margin-top: 3rem;
+}
+
+.newsletter-box {
+  background-color: #111827;
+  color: #f9fafb;
+  padding: 2rem 1.5rem;
+  border-radius: 1rem;
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.newsletter-box h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.4rem;
+}
+
+.newsletter-box p {
+  margin: 0 0 1.5rem;
+  font-size: 0.95rem;
+  color: #e5e7eb;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: stretch;
+}
+
+.newsletter-form label {
+  font-size: 0.85rem;
+  text-align: left;
+}
+
+.newsletter-form input[type="email"] {
+  padding: 0.6rem 0.75rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 0.95rem;
+}
+
+.newsletter-form button {
+  padding: 0.7rem 1rem;
+  border-radius: 999px;
+  border: none;
+  background-color: #fbbf24;
+  color: #111827;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.newsletter-form button:hover {
+  background-color: #f59e0b;
+}
+
+/* Footer */
+.site-footer {
+  border-top: 1px solid #d1d5db;
+  padding: 1.5rem 1rem 2rem;
+  font-size: 0.85rem;
+  color: #6b7280;
+  text-align: center;
+}
+
+.site-footer a {
+  color: #2563eb;
+}
+
+/* RESPONSIVE BREAKPOINTS */
+
+/* Tablety / menší notebooky */
+@media (max-width: 900px) {
+  .featured-section {
+    grid-template-columns: 1fr;
+  }
+
+  main {
+    padding-inline: 1rem;
+  }
+}
+
+/* Mobily */
+@media (max-width: 640px) {
+  .top-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .top-nav-left,
+  .top-nav-right {
+    display: none; /* Na mobilu necháme jen název webu, můžeme pak udělat burger menu */
+  }
+
+  .top-nav-center {
+    flex: none;
+  }
+
+  .newsletter-box {
+    padding: 1.5rem 1.25rem;
+  }
+}

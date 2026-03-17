@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <title>Název webu – magazín o kartičkách</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Horní navigace -->
+  <header class="top-nav">
+    <div class="top-nav-left">
+      <a href="#novinky">Novinky</a>
+      <a href="#pruvodce">Průvodce pro začátečníky</a>
+      <a href="#slovnik">Slovník</a>
+    </div>
+    <div class="top-nav-center">
+      <!-- Sem doplníme logo / název webu -->
+      <a href="#" class="site-title">NÁZEV WEBU</a>
+    </div>
+    <div class="top-nav-right">
+      <a href="#newsletter" class="newsletter-link">Newsletter</a>
+    </div>
+  </header>
+
+  <!-- Lišta s kategoriemi -->
+  <nav class="topic-bar">
+    <span class="topic-label">Téma:</span>
+    <a href="#tema-pokemon">Pokémon</a>
+    <a href="#tema-mtg">Magic: The Gathering</a>
+    <a href="#tema-sw">Star Wars</a>
+  </nav>
+
+  <main>
+
+    <!-- Hlavní článek + 3 menší -->
+    <section class="featured-section" id="novinky">
+      <article class="featured-main">
+        <span class="badge">Novinka</span>
+        <h1>Hlavní článek o kartičkách – pracovní titulek</h1>
+        <p>
+          Krátký perex k hlavnímu článku, který naláká čtenáře.
+          Ideálně 2–3 věty o tom, co se v článku dozví.
+        </p>
+        <a href="#" class="read-more">Číst celý článek</a>
+      </article>
+
+      <div class="featured-grid">
+        <article class="featured-small">
+          <h2>Menší článek 1</h2>
+          <p>Krátký popis článku, jedna až dvě věty.</p>
+          <a href="#" class="read-more">Číst více</a>
+        </article>
+
+        <article class="featured-small">
+          <h2>Menší článek 2</h2>
+          <p>Krátký popis článku, jedna až dvě věty.</p>
+          <a href="#" class="read-more">Číst více</a>
+        </article>
+
+        <article class="featured-small">
+          <h2>Menší článek 3</h2>
+          <p>Krátký popis článku, jedna až dvě věty.</p>
+          <a href="#" class="read-more">Číst více</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Průvodce pro začátečníky – 6 článků -->
+    <section class="beginners-section" id="pruvodce">
+      <header class="section-header">
+        <h2>Průvodce pro začátečníky</h2>
+        <p>Úvod do světa kartiček Pokémon, Magic a Star Wars.</p>
+      </header>
+
+      <div class="beginners-grid">
+        <article class="guide-card" id="tema-pokemon">
+          <span class="tag">Pokémon</span>
+          <h3>Jak začít sbírat Pokémon karty</h3>
+          <p>Základy produktů, rarit a co koupit jako první.</p>
+          <a href="#" class="read-more">Číst více</a>
+        </article>
+
+        <article class="guide-card" id="tema-mtg">
+          <span class="tag">Magic: The Gathering</span>
+          <h3>První kroky v Magicu</h3>
+          <p>Formáty, balíčky a jak se rychle zorientovat.</p>
+          <a href="#" class="read-more">Číst více</a>
+        </article>
+
+        <article class="guide-card" id="tema-sw">
+          <span class="tag">Star Wars</span>
+          <h3>Úvod do Star Wars karet</h3>
+          <p>Jaké existují produkty a co dává smysl sbírat.</p>
+          <a href="#" class="read-more">Číst více</a>
+        </article>
+
+        <article class="guide-card">
+          <span class="tag">Pokémon</span>
+          <h3>Co znamenají různé raritky</h3>
+          <p>Symboly rare, holo, full art, alt art atd.</p>
+          <a href="#" class="read-more">Číst více</a>
+        </article>
+
+        <article class="guide-card">
+          <span class="tag">Magic: The Gathering</span>
+          <h3>Rozdíl mezi produkty (Boostery, Bundly…)</h3>
+          <p>Jak nenaletět a koupit správný produkt.</p>
+          <a href="#" class="read-more">Číst více</a>
+        </article>
+
+        <article class="guide-card">
+          <span class="tag">Star Wars</span>
+          <h3>Jak fungují číslované karty a paralely</h3>
+          <p>Co dává hodnotu moderním Star Wars kartám.</p>
+          <a href="#" class="read-more">Číst více</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Slovník (placeholder) -->
+    <section class="dictionary-section" id="slovnik">
+      <header class="section-header">
+        <h2>Slovník pojmů</h2>
+        <p>Základní termíny ze světa sběratelských karet.</p>
+      </header>
+      <!-- Sem můžeme později doplnit seznam pojmů -->
+    </section>
+
+    <!-- Newsletter blok -->
+    <section class="newsletter-section" id="newsletter">
+      <div class="newsletter-box">
+        <h2>Neutečou ti žádné novinky o kartičkách</h2>
+        <p>Přihlas se k odběru newsletteru a dostávej tipy na produkty,
+           články pro začátečníky i pokročilé a novinky od Three Peons.</p>
+        <form action="#" method="post" class="newsletter-form">
+          <label for="email">Tvůj e-mail</label>
+          <input type="email" id="email" name="email" placeholder="např. ash@kanto.com" required>
+          <button type="submit">Chci odebírat</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 NÁZEV WEBU – obsah o kartičkách Pokémon, Magic a Star Wars.</p>
+    <p>Projekt ve spolupráci s <a href="https://threepeons.com" target="_blank">Three Peons</a>.</p>
+  </footer>
+
+</body>
+</html>
