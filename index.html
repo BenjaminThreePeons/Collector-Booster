@@ -1,27 +1,30 @@
-<!DOCTYPE html>
-<html lang="cs">
-<head>
-  <meta charset="UTF-8">
-  <title>Název webu – magazín o kartičkách</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-  <!-- Horní navigace -->
+<!-- Horní navigace ve stylu Cardsmag -->
   <header class="top-nav">
-    <div class="top-nav-left">
-      <a href="#novinky">Novinky</a>
-      <a href="#pruvodce">Průvodce pro začátečníky</a>
-      <a href="#slovnik">Slovník</a>
+    <div class="top-nav-inner">
+      <nav class="main-nav-left">
+        <a href="#novinky" class="nav-link active">Novinky</a>
+        <a href="#pruvodce" class="nav-link">Průvodce</a>
+        <a href="#slovnik" class="nav-link">Slovník</a>
+      </nav>
+
+      <div class="top-nav-center">
+        <a href="#" class="site-title">Collector Booster</a> <!-- tady pak dáme Collector Booster / jiný název -->
+      </div>
+
+      <div class="main-nav-right">
+        <a href="#newsletter" class="btn-newsletter">Newsletter</a>
+      </div>
     </div>
-    <div class="top-nav-center">
-      <!-- Sem doplníme logo / název webu -->
-      <a href="#" class="site-title">NÁZEV WEBU</a>
-    </div>
-    <div class="top-nav-right">
-      <a href="#newsletter" class="newsletter-link">Newsletter</a>
-    </div>
+
+    <!-- Lišta s rubrikami -->
+    <nav class="topic-bar">
+      <span class="topic-label">Rubriky:</span>
+      <a href="#" class="topic-pill active">Vše</a>
+      <a href="#tema-pokemon" class="topic-pill">Pokémon</a>
+      <a href="#tema-mtg" class="topic-pill">Magic</a>
+      <a href="#tema-sw" class="topic-pill">Star Wars</a>
+      <!-- případně další: One Piece, Lorcana, atd. -->
+    </nav>
   </header>
 
   <!-- Lišta s kategoriemi -->

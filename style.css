@@ -35,8 +35,15 @@ main {
   position: sticky;
   top: 0;
   z-index: 50;
-  background-color: #111827;
-  color: #f9fafb;
+  background-color: #ffffff;
+  color: #111827;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* vnitřek horní lišty */
+.top-nav-inner {
+  max-width: 1120px;
+  margin: 0 auto;
   padding: 0.75rem 1rem;
   display: flex;
   align-items: center;
@@ -49,31 +56,39 @@ main {
   font-size: 0.9rem;
 }
 
-.top-nav-left,
-.top-nav-right {
+.main-nav-left,
+.main-nav-right {
   display: flex;
-  gap: 1rem;
   align-items: center;
+  gap: 1.25rem;
 }
 
-.top-nav-center {
-  text-align: center;
-  flex: 1;
+.nav-link {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.nav-link.active {
+  color: #111827;
+  font-weight: 600;
 }
 
 .site-title {
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.35em;
   text-transform: uppercase;
-  font-size: 0.95rem;
+  font-size: 1rem;
+  color: #111827;
+  text-align: center;
 }
 
-/* Newsletter v headeru */
-.newsletter-link {
-  border: 1px solid #f9fafb;
-  border-radius: 999px;
-  padding: 0.3rem 0.9rem;
+.btn-newsletter {
   font-size: 0.85rem;
+  font-weight: 600;
+  color: #ffffff;
+  background: linear-gradient(135deg, #6366f1, #a855f7);
+  padding: 0.45rem 1.2rem;
+  border-radius: 999px;
 }
 
 /* Lišta s tématy */
@@ -87,20 +102,37 @@ main {
   overflow-x: auto;
 }
 
+.topic-bar {
+  border-top: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
+  background-color: #ffffff;
+  color: #6b7280;
+  padding: 0.6rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  overflow-x: auto;
+}
+
 .topic-label {
-  font-weight: 600;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #9ca3af;
   white-space: nowrap;
 }
 
-.topic-bar a {
+.topic-pill {
   font-size: 0.9rem;
   white-space: nowrap;
-  padding: 0.2rem 0.5rem;
+  padding: 0.2rem 0.8rem;
   border-radius: 999px;
+  color: #4b5563;
 }
 
-.topic-bar a:hover {
-  background-color: #374151;
+.topic-pill.active {
+  background-color: #ede9fe;
+  color: #4c1d95;
 }
 
 /* Featured sekce – hlavní článek + 3 menší */
@@ -328,21 +360,21 @@ main {
 
 /* Mobily */
 @media (max-width: 640px) {
-  .top-nav {
-    flex-wrap: wrap;
-    justify-content: center;
+  .top-nav-inner {
+    padding-inline: 0.75rem;
+    gap: 0.5rem;
   }
 
-  .top-nav-left,
-  .top-nav-right {
-    display: none; /* Na mobilu necháme jen název webu, můžeme pak udělat burger menu */
+  .main-nav-left {
+    gap: 0.75rem;
   }
 
-  .top-nav-center {
-    flex: none;
+  .site-title {
+    letter-spacing: 0.25em;
+    font-size: 0.9rem;
   }
 
-  .newsletter-box {
-    padding: 1.5rem 1.25rem;
+  .btn-newsletter {
+    padding-inline: 0.8rem;
   }
 }
