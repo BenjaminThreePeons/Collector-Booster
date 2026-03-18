@@ -2,7 +2,7 @@
 <html lang="cs">
 <head>
   <meta charset="UTF-8">
-  <title>Collector Booster – magazín o kartičkách</title>
+  <title>Collector Booster – novinky z Magic: The Gathering</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Google Fonts -->
@@ -14,32 +14,25 @@
 </head>
 <body>
 
-  <!-- Horní navigace ve stylu Cardsmag -->
+  <!-- Horní navigace – logo vlevo, Newsletter vpravo -->
   <header class="top-nav">
     <div class="top-nav-inner">
-      <nav class="main-nav-left">
-        <a href="#novinky" class="nav-link active">Novinky</a>
-        <a href="#pruvodce" class="nav-link">Průvodce</a>
-        <a href="#slovnik" class="nav-link">Slovník</a>
-      </nav>
-
-      <div class="top-nav-center">
+      <div class="top-nav-left">
         <a href="#" class="site-title">COLLECTOR BOOSTER</a>
       </div>
-
-      <div class="main-nav-right">
+      <div class="top-nav-right">
         <a href="#newsletter" class="btn-newsletter">Newsletter</a>
       </div>
     </div>
 
-    <!-- Lišta s rubrikami obalená do stejného kontejneru -->
+    <!-- Lišta s kategoriemi -->
     <div class="topic-wrapper">
       <nav class="topic-bar">
-        <span class="topic-label">Rubriky:</span>
-        <a href="#" class="topic-pill active">Vše</a>
-        <a href="#tema-pokemon" class="topic-pill">Pokémon</a>
-        <a href="#tema-mtg" class="topic-pill">Magic</a>
-        <a href="#tema-sw" class="topic-pill">Star Wars</a>
+        <a href="#" class="topic-pill active">Novinky</a>
+        <a href="#formaty" class="topic-pill">Formáty</a>
+        <a href="#decky" class="topic-pill">Decklisty</a>
+        <a href="#finance" class="topic-pill">Finance</a>
+        <a href="#zacatecnici" class="topic-pill">Začátečníci</a>
       </nav>
     </div>
   </header>
@@ -50,10 +43,11 @@
     <section class="featured-section" id="novinky">
       <article class="featured-main">
         <span class="badge">Novinka</span>
-        <h1>Hlavní článek o kartičkách – pracovní titulek</h1>
+        <h1>Hlavní článek o Magicu – pracovní titulek</h1>
         <p>
           Krátký perex k hlavnímu článku, který naláká čtenáře.
-          Ideálně 2–3 věty o tom, co se v článku dozví.
+          Ideálně 2–3 věty o tom, co se v článku dozví – formáty,
+          nové edice nebo zajímavé karty.
         </p>
         <a href="#" class="read-more">Číst celý článek</a>
       </article>
@@ -79,75 +73,15 @@
       </div>
     </section>
 
-    <!-- Průvodce pro začátečníky – 6 článků -->
-    <section class="beginners-section" id="pruvodce">
-      <header class="section-header">
-        <h2>Průvodce pro začátečníky</h2>
-        <p>Úvod do světa kartiček Pokémon, Magic a Star Wars.</p>
-      </header>
-
-      <div class="beginners-grid">
-        <article class="guide-card" id="tema-pokemon">
-          <span class="tag">Pokémon</span>
-          <h3>Jak začít sbírat Pokémon karty</h3>
-          <p>Základy produktů, rarit a co koupit jako první.</p>
-          <a href="#" class="read-more">Číst více</a>
-        </article>
-
-        <article class="guide-card" id="tema-mtg">
-          <span class="tag">Magic: The Gathering</span>
-          <h3>První kroky v Magicu</h3>
-          <p>Formáty, balíčky a jak se rychle zorientovat.</p>
-          <a href="#" class="read-more">Číst více</a>
-        </article>
-
-        <article class="guide-card" id="tema-sw">
-          <span class="tag">Star Wars</span>
-          <h3>Úvod do Star Wars karet</h3>
-          <p>Jaké existují produkty a co dává smysl sbírat.</p>
-          <a href="#" class="read-more">Číst více</a>
-        </article>
-
-        <article class="guide-card">
-          <span class="tag">Pokémon</span>
-          <h3>Co znamenají různé raritky</h3>
-          <p>Symboly rare, holo, full art, alt art atd.</p>
-          <a href="#" class="read-more">Číst více</a>
-        </article>
-
-        <article class="guide-card">
-          <span class="tag">Magic: The Gathering</span>
-          <h3>Rozdíl mezi produkty (Boostery, Bundly…)</h3>
-          <p>Jak nenaletět a koupit správný produkt.</p>
-          <a href="#" class="read-more">Číst více</a>
-        </article>
-
-        <article class="guide-card">
-          <span class="tag">Star Wars</span>
-          <h3>Jak fungují číslované karty a paralely</h3>
-          <p>Co dává hodnotu moderním Star Wars kartám.</p>
-          <a href="#" class="read-more">Číst více</a>
-        </article>
-      </div>
-    </section>
-
-    <!-- Slovník (placeholder) -->
-    <section class="dictionary-section" id="slovnik">
-      <header class="section-header">
-        <h2>Slovník pojmů</h2>
-        <p>Základní termíny ze světa sběratelských karet.</p>
-      </header>
-    </section>
-
-    <!-- Newsletter blok -->
+    <!-- Newsletter hned pod články -->
     <section class="newsletter-section" id="newsletter">
       <div class="newsletter-box">
-        <h2>Neutečou ti žádné novinky o kartičkách</h2>
-        <p>Přihlas se k odběru newsletteru a dostávej tipy na produkty,
-           články pro začátečníky i pokročilé a novinky od Three Peons.</p>
+        <h2>Chceš dostávat nové články o Magicu jako první?</h2>
+        <p>Přihlas se k odběru newsletteru a jednou za čas dostaneš
+           přehled novinek, decklistů a tipů na zajímavé karty z Magic: The Gathering.</p>
         <form action="#" method="post" class="newsletter-form">
           <label for="email">Tvůj e-mail</label>
-          <input type="email" id="email" name="email" placeholder="např. ash@kanto.com" required>
+          <input type="email" id="email" name="email" placeholder="např. jace@rdw.cz" required>
           <button type="submit">Chci odebírat</button>
         </form>
       </div>
@@ -156,7 +90,7 @@
   </main>
 
   <footer class="site-footer">
-    <p>&copy; 2026 Collector Booster – obsah o kartičkách Pokémon, Magic a Star Wars.</p>
+    <p>&copy; 2026 Collector Booster – novinky z Magic: The Gathering.</p>
     <p>Projekt ve spolupráci s <a href="https://threepeons.com" target="_blank">Three Peons</a>.</p>
   </footer>
 
