@@ -62,7 +62,7 @@ main {
   font-weight: 700;
   letter-spacing: 0.28em;
   text-transform: uppercase;
-  font-size: 1.3rem; /* mírně zvětšeno */
+  font-size: 1.3rem;
   color: #111827;
 }
 
@@ -117,12 +117,32 @@ main {
   gap: 2rem;
 }
 
-/* Hlavní článek */
+/* Hlavní článek s obrázkem */
+
 .featured-main {
   background-color: #ffffff;
-  padding: 1.5rem;
   border-radius: 0.75rem;
   box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.featured-image-wrapper {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.featured-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.featured-main-body {
+  padding: 1.5rem;
 }
 
 .featured-main .badge {
@@ -151,7 +171,7 @@ main {
   color: #2563eb;
 }
 
-/* Tři menší články vedle */
+/* Tři menší články vedle – s obrázkem */
 
 .featured-grid {
   display: grid;
@@ -161,9 +181,28 @@ main {
 
 .featured-small {
   background-color: #ffffff;
-  padding: 1rem;
   border-radius: 0.75rem;
   box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-image-wrapper {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card-body {
+  padding: 1rem;
 }
 
 .featured-small h2 {
