@@ -39,62 +39,65 @@
 
   <main>
 
-    <!-- Hlavní článek + 3 menší (vše s obrázkem) -->
-    <section class="featured-section" id="novinky">
-      <article class="featured-main">
-        <div class="featured-image-wrapper">
-          <img src="https://via.placeholder.com/800x450?text=Hlavni+clanek+Magic"
-               alt="Hlavní článek o Magicu" class="featured-image">
+    <!-- Hlavní článek: velký obrázek vlevo, text vpravo -->
+    <section class="hero-section" id="novinky">
+      <div class="hero-image-wrapper">
+        <img src="https://via.placeholder.com/900x500?text=Hlavni+MTG+clanek"
+             alt="Hlavní článek o Magicu" class="hero-image">
+      </div>
+      <article class="hero-content">
+        <span class="badge">Novinka</span>
+        <h1>Hlavní článek o Magicu – pracovní titulek</h1>
+        <p class="hero-meta">Rubrika: Novinky • 19. 3. 2026</p>
+        <p class="hero-perex">
+          Krátký perex k hlavnímu článku, který naláká čtenáře. Ideálně 2–3
+          věty o tom, co se v článku dozví – nové sety, zajímavé karty,
+          změny v metagame nebo spekulace okolo financí.
+        </p>
+        <a href="#" class="read-more">Číst celý článek</a>
+      </article>
+    </section>
+
+    <!-- Tři menší články v jednom řádku -->
+    <section class="teasers-section">
+      <article class="teaser-card" id="pravidla">
+        <div class="teaser-image-wrapper">
+          <img src="https://via.placeholder.com/600x340?text=Pravidla+hry"
+               alt="Pravidla hry Magic" class="teaser-image">
         </div>
-        <div class="featured-main-body">
-          <span class="badge">Novinka</span>
-          <h1>Hlavní článek o Magicu – pracovní titulek</h1>
-          <p>
-            Krátký perex k hlavnímu článku, který naláká čtenáře.
-            Ideálně 2–3 věty o tom, co se v článku dozví – nové edice,
-            zajímavé karty nebo změny v metagame.
-          </p>
-          <a href="#" class="read-more">Číst celý článek</a>
+        <div class="teaser-body">
+          <span class="teaser-tag">Pravidla hry</span>
+          <h2>5 pravidel, která nejčastěji matou nové hráče</h2>
+          <p>State-based akce, pořadí kroků kola a jak správně fungují stack a triggery.</p>
+          <a href="#" class="read-more">Číst více</a>
         </div>
       </article>
 
-      <div class="featured-grid">
-        <article class="featured-small" id="pravidla">
-          <div class="card-image-wrapper">
-            <img src="https://via.placeholder.com/400x220?text=Pravidla+hry"
-                 alt="Pravidla hry Magic" class="card-image">
-          </div>
-          <div class="card-body">
-            <h2>Pravidla hry</h2>
-            <p>Články, které vysvětlují základní i pokročilá pravidla Magicu.</p>
-            <a href="#" class="read-more">Číst více</a>
-          </div>
-        </article>
+      <article class="teaser-card" id="sberani">
+        <div class="teaser-image-wrapper">
+          <img src="https://via.placeholder.com/600x340?text=Sbirani+karet"
+               alt="Sbírání Magic karet" class="teaser-image">
+        </div>
+        <div class="teaser-body">
+          <span class="teaser-tag">Sbírání karet</span>
+          <h2>Jak si postavit sbírku, která neztratí hodnotu</h2>
+          <p>Zaměření na staples, reprinty a jak se vyhnout krátkodobému hypu.</p>
+          <a href="#" class="read-more">Číst více</a>
+        </div>
+      </article>
 
-        <article class="featured-small" id="sberani">
-          <div class="card-image-wrapper">
-            <img src="https://via.placeholder.com/400x220?text=Sbirani+karet"
-                 alt="Sbírání Magic karet" class="card-image">
-          </div>
-          <div class="card-body">
-            <h2>Sbírání karet</h2>
-            <p>Tipy na produkty, raritky a jak budovat dlouhodobou sbírku.</p>
-            <a href="#" class="read-more">Číst více</a>
-          </div>
-        </article>
-
-        <article class="featured-small" id="turnaje">
-          <div class="card-image-wrapper">
-            <img src="https://via.placeholder.com/400x220?text=Turnaje"
-                 alt="Turnaje v Magicu" class="card-image">
-          </div>
-          <div class="card-body">
-            <h2>Turnaje</h2>
-            <p>Reporty z turnajů, metagame a jak se připravit na svůj první event.</p>
-            <a href="#" class="read-more">Číst více</a>
-          </div>
-        </article>
-      </div>
+      <article class="teaser-card" id="arena">
+        <div class="teaser-image-wrapper">
+          <img src="https://via.placeholder.com/600x340?text=MTG+Arena"
+               alt="MTG Arena" class="teaser-image">
+        </div>
+        <div class="teaser-body">
+          <span class="teaser-tag">MTG Arena</span>
+          <h2>Jak začít na MTG Arena bez zbytečného utrácení</h2>
+          <p>Daily questy, efektivní drafty a které balíčky craftit jako první.</p>
+          <a href="#" class="read-more">Číst více</a>
+        </div>
+      </article>
     </section>
 
     <!-- Newsletter hned pod články -->
