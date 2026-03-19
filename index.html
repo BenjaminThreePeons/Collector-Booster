@@ -28,47 +28,71 @@
     <!-- Lišta s kategoriemi -->
     <div class="topic-wrapper">
       <nav class="topic-bar">
-        <a href="#" class="topic-pill active">Novinky</a>
-        <a href="#formaty" class="topic-pill">Formáty</a>
-        <a href="#decky" class="topic-pill">Decklisty</a>
-        <a href="#finance" class="topic-pill">Finance</a>
-        <a href="#zacatecnici" class="topic-pill">Začátečníci</a>
+        <a href="#novinky" class="topic-pill active">Novinky</a>
+        <a href="#pravidla" class="topic-pill">Pravidla hry</a>
+        <a href="#sberani" class="topic-pill">Sbírání karet</a>
+        <a href="#turnaje" class="topic-pill">Turnaje</a>
+        <a href="#arena" class="topic-pill">MTG Arena</a>
       </nav>
     </div>
   </header>
 
   <main>
 
-    <!-- Hlavní článek + 3 menší -->
+    <!-- Hlavní článek + 3 menší (vše s obrázkem) -->
     <section class="featured-section" id="novinky">
       <article class="featured-main">
-        <span class="badge">Novinka</span>
-        <h1>Hlavní článek o Magicu – pracovní titulek</h1>
-        <p>
-          Krátký perex k hlavnímu článku, který naláká čtenáře.
-          Ideálně 2–3 věty o tom, co se v článku dozví – formáty,
-          nové edice nebo zajímavé karty.
-        </p>
-        <a href="#" class="read-more">Číst celý článek</a>
+        <div class="featured-image-wrapper">
+          <img src="https://via.placeholder.com/800x450?text=Hlavni+clanek+Magic"
+               alt="Hlavní článek o Magicu" class="featured-image">
+        </div>
+        <div class="featured-main-body">
+          <span class="badge">Novinka</span>
+          <h1>Hlavní článek o Magicu – pracovní titulek</h1>
+          <p>
+            Krátký perex k hlavnímu článku, který naláká čtenáře.
+            Ideálně 2–3 věty o tom, co se v článku dozví – nové edice,
+            zajímavé karty nebo změny v metagame.
+          </p>
+          <a href="#" class="read-more">Číst celý článek</a>
+        </div>
       </article>
 
       <div class="featured-grid">
-        <article class="featured-small">
-          <h2>Menší článek 1</h2>
-          <p>Krátký popis článku, jedna až dvě věty.</p>
-          <a href="#" class="read-more">Číst více</a>
+        <article class="featured-small" id="pravidla">
+          <div class="card-image-wrapper">
+            <img src="https://via.placeholder.com/400x220?text=Pravidla+hry"
+                 alt="Pravidla hry Magic" class="card-image">
+          </div>
+          <div class="card-body">
+            <h2>Pravidla hry</h2>
+            <p>Články, které vysvětlují základní i pokročilá pravidla Magicu.</p>
+            <a href="#" class="read-more">Číst více</a>
+          </div>
         </article>
 
-        <article class="featured-small">
-          <h2>Menší článek 2</h2>
-          <p>Krátký popis článku, jedna až dvě věty.</p>
-          <a href="#" class="read-more">Číst více</a>
+        <article class="featured-small" id="sberani">
+          <div class="card-image-wrapper">
+            <img src="https://via.placeholder.com/400x220?text=Sbirani+karet"
+                 alt="Sbírání Magic karet" class="card-image">
+          </div>
+          <div class="card-body">
+            <h2>Sbírání karet</h2>
+            <p>Tipy na produkty, raritky a jak budovat dlouhodobou sbírku.</p>
+            <a href="#" class="read-more">Číst více</a>
+          </div>
         </article>
 
-        <article class="featured-small">
-          <h2>Menší článek 3</h2>
-          <p>Krátký popis článku, jedna až dvě věty.</p>
-          <a href="#" class="read-more">Číst více</a>
+        <article class="featured-small" id="turnaje">
+          <div class="card-image-wrapper">
+            <img src="https://via.placeholder.com/400x220?text=Turnaje"
+                 alt="Turnaje v Magicu" class="card-image">
+          </div>
+          <div class="card-body">
+            <h2>Turnaje</h2>
+            <p>Reporty z turnajů, metagame a jak se připravit na svůj první event.</p>
+            <a href="#" class="read-more">Číst více</a>
+          </div>
         </article>
       </div>
     </section>
