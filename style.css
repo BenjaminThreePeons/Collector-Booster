@@ -240,125 +240,6 @@ main {
 
 /* NEWSLETTER – full width pruh + menší, zaoblený box */
 
-section.newsletter-section {
-  padding: 10px 0;
-  background-color: #020617;      /* tmavý pruh přes celou šířku */
-}
-
-section.newsletter-section .newsletter-box {
-  max-width: 640px;
-  margin: 0 auto;
-  padding: 8px 12px;              /* nižší obdélník */
-  text-align: center;
-  color: #f9fafb;
-  background-color: #020617;
-  border-radius: 16px;            /* zaoblené rohy */
-}
-
-/* nadpis a text */
-
-section.newsletter-section .newsletter-box h2 {
-  font-size: 1.8rem;
-  margin-bottom: 10px;
-}
-
-section.newsletter-section .newsletter-box p {
-  margin-bottom: 6px;
-  line-height: 1.5;
-}
-
-/* formulář */
-
-section.newsletter-section .newsletter-form {
-  margin-top: 12px;
-}
-
-section.newsletter-section .newsletter-form label {
-  display: block;
-  margin-bottom: 6px;
-  font-weight: 600;
-}
-
-section.newsletter-section .newsletter-form input[type="email"] {
-  width: 100%;
-  max-width: 360px;
-  padding: 8px 10px;
-  border-radius: 6px;
-  border: 1px solid #334155;
-  font-size: 1rem;
-  background-color: #020617;
-  color: #f9fafb;
-}
-
-section.newsletter-section .newsletter-form input[type="email"]::placeholder {
-  color: #64748b;
-}
-
-section.newsletter-section .newsletter-form button {
-  margin-top: 8px;
-  padding: 8px 16px;
-  border-radius: 6px;
-  border: none;
-  background: #111827;
-  color: #fff;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-section.newsletter-section .newsletter-form button:hover {
-  background: #1f2937;
-}
-
-/* Footer */
-
-.site-footer {
-  border-top: 1px solid rgba(148, 163, 184, 0.35);
-  padding: 20px 16px 28px;
-  text-align: center;
-  font-size: 13px;
-  color: #6b7280;
-}
-
-.site-footer a {
-  color: #4b5563;
-}
-
-/* Responsivita */
-
-@media (max-width: 900px) {
-  .hero-section {
-    flex-direction: column;
-  }
-
-  .hero-image-wrapper {
-    width: 100%;
-    max-width: none;
-  }
-
-  .hero-content {
-    max-width: none;
-  }
-}
-
-@media (max-width: 640px) {
-  main {
-    margin-top: 24px;
-  }
-
-  .hero-content h1 {
-    font-size: 24px;
-  }
-
-  .teasers-section {
-    flex-direction: column;
-  }
-
-  .newsletter-box {
-    padding: 20px 18px 22px;
-  }
-}
-/* NEWSLETTER – full width pruh + menší, zaoblený box */
-
 section#newsletter {
   padding: 8px 0;
   background-color: #020617;
@@ -426,4 +307,53 @@ section#newsletter .newsletter-form button {
 
 section#newsletter .newsletter-form button:hover {
   background: #1f2937;
+}
+
+/* Footer */
+
+.site-footer {
+  border-top: 1px solid rgba(148, 163, 184, 0.35);
+  padding: 20px 16px 28px;
+  text-align: center;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.site-footer a {
+  color: #4b5563;
+}
+
+/* Responsivita */
+
+@media (max-width: 900px) {
+  .hero-section {
+    flex-direction: column;
+  }
+
+  .hero-image-wrapper {
+    width: 100%;
+    max-width: none;
+  }
+
+  .hero-content {
+    max-width: none;
+  }
+}
+
+@media (max-width: 640px) {
+  main {
+    margin-top: 24px;
+  }
+
+  .hero-content h1 {
+    font-size: 24px;
+  }
+
+  .teasers-section {
+    flex-direction: column;
+  }
+
+  .newsletter-box {
+    padding: 20px 18px 22px;
+  }
 }
