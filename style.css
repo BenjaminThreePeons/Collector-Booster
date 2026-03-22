@@ -320,8 +320,14 @@ main {
   max-width: 1120px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-columns: 2fr 1.5fr;  /* info + pravý sloupec */
   gap: 24px;
+}
+
+/* pravý sloupec: Rubriky + Sociální sítě pod sebou */
+.footer-links,
+.footer-social {
+  margin-bottom: 16px;
 }
 
 .footer-col h3,
