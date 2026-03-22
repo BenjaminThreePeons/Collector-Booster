@@ -357,3 +357,69 @@ section.newsletter-section .newsletter-form button:hover {
     padding: 20px 18px 22px;
   }
 }
+/* NEWSLETTER – finální verze */
+
+section#newsletter {
+  padding: 8px 0;
+  background-color: #020617;
+}
+
+section#newsletter > .newsletter-box {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 8px 12px;
+  text-align: center;
+  color: #f9fafb;
+  background-color: #020617;
+  border-radius: 16px;
+}
+
+section#newsletter h2 {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+
+section#newsletter p {
+  margin-bottom: 4px;
+  line-height: 1.4;
+}
+
+section#newsletter .newsletter-form {
+  margin-top: 10px;
+}
+
+section#newsletter .newsletter-form label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+section#newsletter .newsletter-form input[type="email"] {
+  width: 100%;
+  max-width: 360px;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #334155;
+  font-size: 1rem;
+  background-color: #020617;
+  color: #f9fafb;
+}
+
+section#newsletter .newsletter-form input[type="email"]::placeholder {
+  color: #64748b;
+}
+
+section#newsletter .newsletter-form button {
+  margin-top: 8px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  background: #111827;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+section#newsletter .newsletter-form button:hover {
+  background: #1f2937;
+}
