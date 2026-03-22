@@ -240,19 +240,22 @@ main {
 
 /* NEWSLETTER */
 
+/* celý pruh přes celou šířku, zarovnaný se zbytkem webu */
 .newsletter-section {
-  padding: 60px 20px;
+  padding: 60px 0;
+  background-color: #020617; /* tmavá jako tlačítko */
 }
 
+/* vnitřní box zarovnaný se zbytkem layoutu */
 .newsletter-box {
-  max-width: 640px;
-  margin: 0 auto;
-  text-align: center;
-  background-color: #020617;       /* tmavá jako tlačítko */
-  color: #f9fafb;                  /* světlý text */
+  max-width: 640px;          /* šířka obsahu */
+  margin: 0 auto;            /* vycentrování */
   padding: 32px 24px;
+  text-align: center;
+  color: #f9fafb;
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(15, 23, 42, 0.55);
+  border: 1px solid #1f2937; /* jemné orámování, aby se box oddělil */
 }
 
 .newsletter-box h2 {
