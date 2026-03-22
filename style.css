@@ -60,8 +60,8 @@ main {
 
 .site-title {
   font-family: "Barlow Condensed", system-ui, sans-serif;
-  letter-spacing: 0.14em;
-  font-size: 14px;
+  letter-spacing: 0.18em;
+  font-size: 18px;
   font-weight: 700;
   color: #0f172a;
 }
