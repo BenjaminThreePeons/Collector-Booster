@@ -320,7 +320,7 @@ main {
   max-width: 1120px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;  /* Info | Rubriky | Sítě */
+  grid-template-columns: 1fr 0.8fr 0.8fr; /* užší info sloupec */
   gap: 24px;
 }
 
