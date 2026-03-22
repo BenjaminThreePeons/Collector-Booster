@@ -238,48 +238,45 @@ main {
   color: #111827;
 }
 
-/* NEWSLETTER – full width pruh + menší, zaoblený box */
+/* NEWSLETTER – čistý card box pod články */
 
-section#newsletter {
-  padding: 8px 0;
-  background-color: #020617;
+.newsletter-section {
+  padding: 32px 20px;          /* mezera kolem boxu */
+  display: flex;
+  justify-content: center;
 }
 
-section#newsletter > .newsletter-box {
+.newsletter-box {
+  width: 100%;
   max-width: 640px;
-  margin: 0 auto;
-  padding: 8px 12px;
-  text-align: center;
+  background-color: #020617;   /* tmavý obdélník */
   color: #f9fafb;
-  background-color: #020617;
-  border-radius: 16px;
+  padding: 16px 20px;          /* výška – klidně pak doladíme */
+  border-radius: 16px;         /* zaoblené rohy */
+  text-align: center;
 }
 
-/* nadpis a text */
-
-section#newsletter h2 {
+.newsletter-box h2 {
   font-size: 1.8rem;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
-section#newsletter p {
-  margin-bottom: 4px;
-  line-height: 1.4;
+.newsletter-box p {
+  margin-bottom: 6px;
+  line-height: 1.5;
 }
 
-/* formulář */
-
-section#newsletter .newsletter-form {
-  margin-top: 10px;
+.newsletter-form {
+  margin-top: 12px;
 }
 
-section#newsletter .newsletter-form label {
+.newsletter-form label {
   display: block;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
   font-weight: 600;
 }
 
-section#newsletter .newsletter-form input[type="email"] {
+.newsletter-form input[type="email"] {
   width: 100%;
   max-width: 360px;
   padding: 8px 10px;
@@ -290,11 +287,11 @@ section#newsletter .newsletter-form input[type="email"] {
   color: #f9fafb;
 }
 
-section#newsletter .newsletter-form input[type="email"]::placeholder {
+.newsletter-form input[type="email"]::placeholder {
   color: #64748b;
 }
 
-section#newsletter .newsletter-form button {
+.newsletter-form button {
   margin-top: 8px;
   padding: 8px 16px;
   border-radius: 6px;
@@ -305,7 +302,7 @@ section#newsletter .newsletter-form button {
   cursor: pointer;
 }
 
-section#newsletter .newsletter-form button:hover {
+.newsletter-form button:hover {
   background: #1f2937;
 }
 
