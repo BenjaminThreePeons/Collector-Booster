@@ -238,7 +238,7 @@ main {
   color: #111827;
 }
 
-/* Newsletter */
+/* NEWSLETTER */
 
 .newsletter-section {
   padding: 60px 20px;
@@ -248,6 +248,11 @@ main {
   max-width: 640px;
   margin: 0 auto;
   text-align: center;
+  background-color: #020617;       /* tmavá jako tlačítko */
+  color: #f9fafb;                  /* světlý text */
+  padding: 32px 24px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.55);
 }
 
 .newsletter-box h2 {
@@ -275,8 +280,14 @@ main {
   max-width: 360px;
   padding: 10px 12px;
   border-radius: 6px;
-  border: 1px solid #ccc;
+  border: 1px solid #334155;
   font-size: 1rem;
+  background-color: #020617;
+  color: #f9fafb;
+}
+
+.newsletter-form input[type="email"]::placeholder {
+  color: #64748b;
 }
 
 .newsletter-form button {
