@@ -241,31 +241,31 @@ main {
 /* NEWSLETTER */
 
 .newsletter-section {
-  padding: 32px 0;              /* menší výška celé sekce */
+  padding: 20px 0;
   background-color: #020617;    /* tmavý pruh přes celou šířku */
 }
 
 .newsletter-box {
   max-width: 640px;
   margin: 0 auto;
-  padding: 16px 20px;           /* menší padding = nižší obdélník */
+  padding: 12px 16px;           /* menší výška obdélníku */
   text-align: center;
   color: #f9fafb;
-  /* bez border, bez radius, bez shadow */
+  border-radius: 12px;          /* zaoblené rohy jako u článků */
 }
 
 .newsletter-box h2 {
-  font-size: 2rem;
-  margin-bottom: 12px;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
 }
 
 .newsletter-box p {
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   line-height: 1.5;
 }
 
 .newsletter-form {
-  margin-top: 16px;
+  margin-top: 12px;
 }
 
 .newsletter-form label {
@@ -290,7 +290,7 @@ main {
 }
 
 .newsletter-form button {
-  margin-top: 10px;
+  margin-top: 8px;
   padding: 8px 16px;
   border-radius: 6px;
   border: none;
