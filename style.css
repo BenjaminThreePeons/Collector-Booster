@@ -240,19 +240,19 @@ main {
 
 /* NEWSLETTER – full width pruh + menší, zaoblený box */
 
-.newsletter-section {
-  padding: 16px 0;
-  background-color: #020617;    /* tmavý pruh přes celou šířku */
+section.newsletter-section {
+  padding: 10px 0;
+  background-color: #020617;
 }
 
-.newsletter-box {
+section.newsletter-section .newsletter-box {
   max-width: 640px;
   margin: 0 auto;
-  padding: 10px 14px;           /* menší výška obdélníku */
+  padding: 8px 12px;
   text-align: center;
   color: #f9fafb;
-  background-color: #020617;    /* aby box splýval s pruhem */
-  border-radius: 16px;          /* zaoblené rohy */
+  background-color: #020617;
+  border-radius: 16px;
 }
 
 /* nadpis a text */
