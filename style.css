@@ -60,8 +60,8 @@ main {
 
 .site-title {
   font-family: "Barlow Condensed", system-ui, sans-serif;
-  letter-spacing: 0.22em;
-  font-size: 24px;   /* zhruba dvojnásobek původních 14px */
+  letter-spacing: 0.26em;
+  font-size: 32px;   /* ještě výraznější logo v liště */
   font-weight: 700;
   color: #0f172a;
 }
