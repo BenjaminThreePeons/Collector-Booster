@@ -242,44 +242,44 @@ main {
 
 section.newsletter-section {
   padding: 10px 0;
-  background-color: #020617;
+  background-color: #020617;      /* tmavý pruh přes celou šířku */
 }
 
 section.newsletter-section .newsletter-box {
   max-width: 640px;
   margin: 0 auto;
-  padding: 8px 12px;
+  padding: 8px 12px;              /* nižší obdélník */
   text-align: center;
   color: #f9fafb;
   background-color: #020617;
-  border-radius: 16px;
+  border-radius: 16px;            /* zaoblené rohy */
 }
 
 /* nadpis a text */
 
-.newsletter-box h2 {
+section.newsletter-section .newsletter-box h2 {
   font-size: 1.8rem;
   margin-bottom: 10px;
 }
 
-.newsletter-box p {
+section.newsletter-section .newsletter-box p {
   margin-bottom: 6px;
   line-height: 1.5;
 }
 
 /* formulář */
 
-.newsletter-form {
+section.newsletter-section .newsletter-form {
   margin-top: 12px;
 }
 
-.newsletter-form label {
+section.newsletter-section .newsletter-form label {
   display: block;
   margin-bottom: 6px;
   font-weight: 600;
 }
 
-.newsletter-form input[type="email"] {
+section.newsletter-section .newsletter-form input[type="email"] {
   width: 100%;
   max-width: 360px;
   padding: 8px 10px;
@@ -290,11 +290,11 @@ section.newsletter-section .newsletter-box {
   color: #f9fafb;
 }
 
-.newsletter-form input[type="email"]::placeholder {
+section.newsletter-section .newsletter-form input[type="email"]::placeholder {
   color: #64748b;
 }
 
-.newsletter-form button {
+section.newsletter-section .newsletter-form button {
   margin-top: 8px;
   padding: 8px 16px;
   border-radius: 6px;
@@ -305,7 +305,7 @@ section.newsletter-section .newsletter-box {
   cursor: pointer;
 }
 
-.newsletter-form button:hover {
+section.newsletter-section .newsletter-form button:hover {
   background: #1f2937;
 }
 
