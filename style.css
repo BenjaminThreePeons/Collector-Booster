@@ -237,6 +237,16 @@ main {
   color: #111827;
 }
 
+/* Obrázky v kartách článků */
+
+.article-card img,
+.teaser img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
 /* JAK ZAČÍT S MAGICEM – textové karty bez obrázků */
 
 .getting-started-section {
