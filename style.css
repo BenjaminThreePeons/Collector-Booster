@@ -198,19 +198,17 @@ main {
 }
 
 .teaser-image-wrapper {
-  height: 220px;           /* stejná výška rámečku jako u ostatních */
+  height: 220px;               /* stejný rámeček jako ostatní */
   display: flex;
-  align-items: center;
-  justify-content: center; /* obrázek bude uprostřed */
-  overflow: hidden;
+  align-items: center;         /* zarovnat doprostřed na výšku */
+  justify-content: center;     /* zarovnat doprostřed na šířku */
+  overflow: hidden;            /* kdyby něco přesahovalo */
 }
 
 .teaser-image {
-  max-width: 80%;          /* zmenší obsah, rámeček zůstane */
-  max-height: 80%;
-  height: auto;
-  width: auto;
-  display: block;
+  width: 100%;                 /* rámeček zaplní šířkou */
+  height: 100%;                /* i výškou rámečku */
+  object-fit: contain;         /* zobrazí celý obrázek, neřeže ho */
 }
 
 .teaser-body {
