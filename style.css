@@ -174,10 +174,16 @@ main {
   color: #111827;
 }
 
-.read-more {
+.hero-read-more {
+  display: inline-block;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   color: #2563eb;
+  text-decoration: none;
+}
+
+.hero-read-more:hover {
+  text-decoration: underline;
 }
 
 /* Teasery pod hero */
