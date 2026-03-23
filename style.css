@@ -198,15 +198,14 @@ main {
 }
 
 .teaser-image-wrapper {
-  height: 220px;          /* společná výška pro všechny tři */
   overflow: hidden;
 }
 
 .teaser-image {
   width: 100%;
   height: 100%;
-  object-fit: cover;      /* vyplní rámeček, i když je fotka vyšší/nižší */
   display: block;
+  object-fit: cover;
 }
 
 .teaser-body {
