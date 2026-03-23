@@ -110,7 +110,7 @@ main {
 .hero-section {
   display: flex;
   gap: 40px;
-  align-items: center;
+  align-items: stretch;
   margin-top: 32px;
   margin-bottom: 40px;
 }
@@ -139,6 +139,9 @@ main {
   flex: 1;
   max-width: 560px;
   padding: 8px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .badge {
