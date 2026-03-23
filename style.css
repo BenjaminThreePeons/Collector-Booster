@@ -207,9 +207,6 @@ main {
   display: block;
   object-fit: cover;
 
-  .teaser-image--lineup {
-  object-position: center 30%; /* zkus, případně změň na 25% / 35% */
-    
 }
 
 .teaser-body {
