@@ -198,17 +198,14 @@ main {
 }
 
 .teaser-image-wrapper {
-  height: 220px;               /* stejný rámeček jako ostatní */
-  display: flex;
-  align-items: center;         /* zarovnat doprostřed na výšku */
-  justify-content: center;     /* zarovnat doprostřed na šířku */
-  overflow: hidden;            /* kdyby něco přesahovalo */
+  overflow: hidden;
 }
 
 .teaser-image {
-  width: 100%;                 /* rámeček zaplní šířkou */
-  height: 100%;                /* i výškou rámečku */
-  object-fit: contain;         /* zobrazí celý obrázek, neřeže ho */
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
 }
 
 .teaser-body {
