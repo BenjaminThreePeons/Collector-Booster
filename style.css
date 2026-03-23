@@ -238,6 +238,62 @@ main {
   color: #111827;
 }
 
+/* JAK ZAČÍT S MAGICEM – textové karty bez obrázků */
+
+.getting-started-section {
+  max-width: 1120px;
+  margin: 40px auto 32px;
+  padding: 0 20px;
+}
+
+.getting-started-section h2 {
+  font-size: 1.9rem;
+  margin-bottom: 20px;
+}
+
+.getting-started-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.getting-started-card {
+  background-color: #020617;
+  color: #e5e7eb;
+  border-radius: 16px;
+  padding: 16px 18px;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.4);
+}
+
+.getting-started-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.getting-started-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.getting-started-card .read-more {
+  font-size: 0.9rem;
+  color: #93c5fd;
+  text-decoration: none;
+}
+
+.getting-started-card .read-more:hover {
+  text-decoration: underline;
+}
+
+/* responzivita – na mobilu pod sebou */
+
+@media (max-width: 900px) {
+  .getting-started-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* NEWSLETTER – čistý card box pod články */
 
 .newsletter-section {
