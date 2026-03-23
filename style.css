@@ -206,11 +206,11 @@ main {
   height: auto;
   display: block;
   object-fit: cover;
-
 }
 
 .teaser-body {
   padding: 16px 18px 18px;
+
 }
 
 .teaser-tag {
