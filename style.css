@@ -310,16 +310,17 @@ main {
 .newsletter-section {
   padding: 32px 20px;          /* mezera kolem boxu */
   display: flex;
-  justify-content: center;
+  justify-content: center;     /* zarovnání na střed */
 }
 
 .newsletter-box {
   width: 100%;
-  max-width: 640px;
-  background-color: #020617;   /* tmavý obdélník */
+  max-width: 800px;            /* můžeš nechat 640px, když chceš užší */
+  margin: 0 auto;              /* pojistka na centrování */
+  background-color: #020617;
   color: #f9fafb;
-  padding: 16px 20px;          /* výška – klidně pak doladíme */
-  border-radius: 16px;         /* zaoblené rohy */
+  padding: 24px 28px;
+  border-radius: 16px;
   text-align: center;
 }
 
