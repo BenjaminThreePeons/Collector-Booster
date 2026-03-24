@@ -645,3 +645,66 @@ main {
 .article p {
   margin-bottom: 12px;
 }
+/* ===== Další články pod článkem ===== */
+
+.related-articles {
+  max-width: 960px;
+  margin: 0 auto 64px;
+  padding: 0 16px;
+}
+
+.related-articles h2 {
+  font-size: 1.6rem;
+  margin: 8px 0 20px;
+}
+
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.related-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 12px 12px 16px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.12);
+}
+
+.related-image-wrapper img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+}
+
+.related-tag {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #888;
+  display: block;
+  margin: 8px 0 4px;
+}
+
+.related-card h3 {
+  font-size: 1rem;
+  margin: 0 0 8px;
+}
+
+.related-link {
+  font-size: 0.9rem;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.related-link:hover {
+  text-decoration: underline;
+}
+
+/* Stack na mobilu */
+@media (max-width: 800px) {
+  .related-grid {
+    grid-template-columns: 1fr;
+  }
+}
