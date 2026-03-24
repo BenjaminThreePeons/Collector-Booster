@@ -448,4 +448,86 @@ main {
   .footer-inner {
     grid-template-columns: 1fr;
   }
+}/* ===== Single article page ===== */
+
+.site-main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px 16px 48px;
+}
+
+/* Samotný článek */
+.article {
+  line-height: 1.6;
+  font-size: 16px;
+  color: #111;
+}
+
+/* Hlavička článku */
+.article-header h1 {
+  font-size: 2.2rem;
+  line-height: 1.2;
+  margin: 0 0 12px;
+}
+
+.article-tag {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #888;
+  margin-bottom: 4px;
+  display: inline-block;
+}
+
+.article-perex {
+  font-size: 1.05rem;
+  color: #333;
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+
+/* Obrázek v článku */
+.article-hero {
+  margin: 24px 0 32px;
+}
+
+.article-hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.article-hero figcaption {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 6px;
+}
+
+/* Nadpisy + odstavce uvnitř článku */
+.article h2 {
+  font-size: 1.4rem;
+  margin: 28px 0 10px;
+}
+
+.article p {
+  margin-bottom: 12px;
+}
+
+/* Spodní část článku */
+.article-footer {
+  margin-top: 32px;
+  padding-top: 16px;
+  border-top: 1px solid #eee;
+  color: #444;
+}
+
+/* Jednoduchý styl patičky webu */
+.site-footer {
+  border-top: 1px solid #eee;
+  padding: 16px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 24px;
 }
