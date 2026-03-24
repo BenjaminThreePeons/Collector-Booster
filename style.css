@@ -696,4 +696,27 @@ main {
   .related-grid {
     flex-direction: column;
   }
+.related-body {
+  padding: 10px 14px 12px;
+}
+
+.related-title {
+  margin: 0 0 4px;
+  font-family: "Barlow Condensed", system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.3;
+  color: #0f172a;
+}
+
+.related-link {
+  display: inline-block;
+  margin-top: 2px;
+  font-size: 0.8rem;            /* menší text */
+  font-weight: 500;
+  color: #2563eb;               /* stejná modrá jako na homepage */
+  text-decoration: none;
+}
+
+.related-link:hover {
+  text-decoration: underline;   /* stejné chování jako na hlavní */
 }
