@@ -645,10 +645,10 @@ main {
 .article p {
   margin-bottom: 12px;
 }
-/* ===== Další články – jako teasery ===== */
+/* ===== Další články – stejný layout jako teasery ===== */
 
 .related-articles {
-  margin: 40px 0 0;          /* naváže na text článku */
+  margin: 40px 0 0;
   padding-top: 24px;
   border-top: 1px solid #e5e7eb;
 }
@@ -658,14 +658,13 @@ main {
   font-size: 1.4rem;
 }
 
-/* stejný princip jako .teasers-section */
+/* stejné chování jako .teasers-section */
 .related-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
 }
 
-/* podobné boxy jako teasery */
 .related-card {
   flex: 1 1 0;
   min-width: 0;
@@ -709,7 +708,7 @@ main {
   color: #0f172a;
 }
 
-/* Na mobilech pod sebe (stejně jako teasery) */
+/* Na mobilech pod sebe */
 @media (max-width: 900px) {
   .related-grid {
     flex-direction: column;
