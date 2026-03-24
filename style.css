@@ -645,22 +645,22 @@ main {
 .article p {
   margin-bottom: 12px;
 }
-/* ===== Další články pod článkem ===== */
+/* ===== Další články – finální verze ===== */
 
 .related-articles {
   margin: 48px auto 64px;
-  padding: 0 24px;
+  padding: 0 32px;
   border-top: 1px solid #e5e7eb;
 }
 
 .related-articles h2 {
-  max-width: 1200px;
+  max-width: 1120px;
   margin: 24px auto 24px;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 }
 
 .related-grid {
-  max-width: 1200px;
+  max-width: 1120px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -692,7 +692,7 @@ main {
 
 .related-card h3 {
   font-size: 1rem;
-  margin: 0 0 8px;
+  margin: 0 0 4px;
 }
 
 .related-link {
@@ -705,7 +705,7 @@ main {
   text-decoration: underline;
 }
 
-/* Stack na mobilu */
+/* Na mobilech pod sebe */
 @media (max-width: 800px) {
   .related-grid {
     grid-template-columns: 1fr;
