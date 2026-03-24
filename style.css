@@ -624,3 +624,24 @@ main {
   display: block;
   border-radius: 10px;
 }
+/* Sloupec se zbytkem článku pod obrázkem */
+.article-section {
+  max-width: 760px;
+  margin: 0 auto 64px;
+  padding: 0 16px;
+}
+
+.article {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #111;
+}
+
+.article h2 {
+  font-size: 1.4rem;
+  margin: 28px 0 10px;
+}
+
+.article p {
+  margin-bottom: 12px;
+}
