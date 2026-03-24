@@ -648,14 +648,14 @@ main {
 /* ===== Další články pod článkem ===== */
 
 .related-articles {
-  max-width: 960px;
   margin: 0 auto 64px;
-  padding: 0 16px;
+  padding: 0 48px;
+  border-top: 1px solid #e5e7eb;
 }
 
 .related-articles h2 {
-  font-size: 1.6rem;
-  margin: 8px 0 20px;
+  max-width: 1200px;
+  margin: 24px auto 20px;
 }
 
 .related-grid {
