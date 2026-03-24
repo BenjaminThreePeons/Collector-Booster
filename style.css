@@ -645,7 +645,7 @@ main {
 .article p {
   margin-bottom: 12px;
 }
-/* ===== Další články – stejný layout jako teasery ===== */
+/* Další články – 3 menší boxy pod článkem, v šířce článku */
 
 .related-articles {
   margin: 40px 0 0;
@@ -658,20 +658,18 @@ main {
   font-size: 1.4rem;
 }
 
-/* stejné chování jako .teasers-section */
+/* vždy 3 sloupce na desktopu */
 .related-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
 }
 
 .related-card {
-  flex: 1 1 0;
-  min-width: 0;
   background: #ffffff;
-  border-radius: 18px;
+  border-radius: 14px;
   overflow: hidden;
-  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.16);
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.16);
   display: flex;
   flex-direction: column;
 }
@@ -688,7 +686,7 @@ main {
 }
 
 .related-body {
-  padding: 16px 18px 18px;
+  padding: 12px 14px 14px;
 }
 
 .related-tag {
@@ -701,16 +699,16 @@ main {
 }
 
 .related-card h3 {
-  margin: 0 0 8px;
+  margin: 0 0 6px;
   font-family: "Barlow Condensed", system-ui, sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.25;
   color: #0f172a;
 }
 
 /* Na mobilech pod sebe */
-@media (max-width: 900px) {
+@media (max-width: 780px) {
   .related-grid {
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
 }
