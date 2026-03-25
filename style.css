@@ -240,6 +240,19 @@ main {
   min-height: 3em;
 }
 
+.teaser-card .read-more {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #2563eb !important;
+  text-decoration: none;
+  margin-top: auto;
+}
+
+.teaser-card .read-more:hover {
+  text-decoration: underline;
+}
+
 /* Obrázky v kartách článků */
 
 .article-card img,
