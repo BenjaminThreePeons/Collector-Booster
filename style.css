@@ -236,11 +236,12 @@ main {
   font-size: 20px;
   line-height: 1.25;
   color: #0f172a;
-  flex: 0;
-  min-height: 3em;
+  flex: 0 0 auto;
+  height: 4em;              /* pevná výška – všechny nadpisy stejně vysoké */
+  overflow: hidden;
 }
 
-.teaser-card .read-more {
+.teaser-card .teaser-body .read-more {
   display: inline-block;
   font-size: 14px;
   font-weight: 500;
@@ -249,7 +250,7 @@ main {
   margin-top: auto;
 }
 
-.teaser-card .read-more:hover {
+.teaser-card .teaser-body .read-more:hover {
   text-decoration: underline;
 }
 
