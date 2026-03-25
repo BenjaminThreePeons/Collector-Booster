@@ -711,12 +711,11 @@ main {
 .related-link {
   display: inline-block;
   margin-top: 2px;
-  font-size: 0.8rem;            /* menší text */
+  font-size: 0.8rem;
   font-weight: 500;
-  color: #2563eb;               /* stejná modrá jako na homepage */
+  color: #2563eb;
   text-decoration: none;
 }
-
 .related-link:hover {
-  text-decoration: underline;   /* stejné chování jako na hlavní */
+  text-decoration: underline;
 }
