@@ -61,7 +61,7 @@ main {
 .site-title {
   font-family: "Barlow Condensed", system-ui, sans-serif;
   letter-spacing: 0.26em;
-  font-size: 32px;   /* ještě výraznější logo v liště */
+  font-size: 32px;
   font-weight: 700;
   color: #0f172a;
 }
@@ -115,8 +115,6 @@ main {
   margin-bottom: 40px;
 }
 
-/* Obrázek jako obdélník 16:9 */
-
 .hero-image-wrapper {
   flex: 0 0 46%;
   max-width: 520px;
@@ -132,8 +130,6 @@ main {
   object-fit: cover;
   display: block;
 }
-
-/* Text u hero článku */
 
 .hero-content {
   flex: 1;
@@ -180,6 +176,7 @@ main {
   font-weight: 500;
   color: #2563eb;
   text-decoration: none;
+  margin-top: auto;
 }
 
 .hero-read-more:hover {
@@ -219,7 +216,9 @@ main {
 
 .teaser-body {
   padding: 16px 18px 18px;
-
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .teaser-tag {
@@ -237,6 +236,7 @@ main {
   font-size: 20px;
   line-height: 1.25;
   color: #0f172a;
+  flex: 1;
 }
 
 /* Obrázky v kartách článků */
@@ -249,7 +249,7 @@ main {
   object-fit: cover;
 }
 
-/* JAK ZAČÍT S MAGICEM – textové karty bez obrázků */
+/* JAK ZAČÍT S MAGICEM */
 
 .getting-started-section {
   max-width: 1120px;
@@ -297,26 +297,18 @@ main {
   text-decoration: underline;
 }
 
-/* responzivita – na mobilu pod sebou */
-
-@media (max-width: 900px) {
-  .getting-started-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* NEWSLETTER – čistý card box pod články */
+/* NEWSLETTER */
 
 .newsletter-section {
   width: 100%;
   margin: 32px auto 64px;
-  padding: 0;                  /* případně 0 nebo malý padding */
-  display: block;              /* zrušíme flex, ať do toho nemluví */
+  padding: 0;
+  display: block;
 }
 
 .newsletter-box {
   max-width: 800px;
-  margin: 0 auto;              /* centrum v rámci stránky */
+  margin: 0 auto;
   background-color: #020617;
   color: #f9fafb;
   padding: 24px 28px;
@@ -389,7 +381,7 @@ main {
   max-width: 1120px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 0.8fr 0.8fr; /* užší info sloupec */
+  grid-template-columns: 1fr 0.8fr 0.8fr;
   gap: 24px;
 }
 
@@ -442,96 +434,7 @@ main {
   text-decoration: underline;
 }
 
-/* responzivita – na mobilu pod sebou */
-
-@media (max-width: 768px) {
-  .footer-inner {
-    grid-template-columns: 1fr;
-  }
-}/* ===== Single article page ===== */
-
-.site-main {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 24px 16px 48px;
-}
-
-/* Samotný článek */
-.article {
-  line-height: 1.6;
-  font-size: 16px;
-  color: #111;
-}
-
-/* Hlavička článku */
-.article-header h1 {
-  font-size: 2.2rem;
-  line-height: 1.2;
-  margin: 0 0 12px;
-}
-
-.article-tag {
-  font-size: 0.85rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: #888;
-  margin-bottom: 4px;
-  display: inline-block;
-}
-
-.article-perex {
-  font-size: 1.05rem;
-  color: #333;
-  margin-top: 8px;
-  margin-bottom: 20px;
-}
-
-/* Obrázek v článku */
-.article-hero {
-  margin: 24px 0 32px;
-}
-
-.article-hero img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 10px;
-}
-
-.article-hero figcaption {
-  font-size: 0.85rem;
-  color: #666;
-  margin-top: 6px;
-}
-
-/* Nadpisy + odstavce uvnitř článku */
-.article h2 {
-  font-size: 1.4rem;
-  margin: 28px 0 10px;
-}
-
-.article p {
-  margin-bottom: 12px;
-}
-
-/* Spodní část článku */
-.article-footer {
-  margin-top: 32px;
-  padding-top: 16px;
-  border-top: 1px solid #eee;
-  color: #444;
-}
-
-/* Jednoduchý styl patičky webu */
-.site-footer {
-  border-top: 1px solid #eee;
-  padding: 16px;
-  text-align: center;
-  font-size: 0.85rem;
-  color: #666;
-  margin-top: 24px;
-}
-/* ===== Detail článku: MTG Arena TMNT ===== */
+/* ===== Detail článku ===== */
 
 .article-hero-header {
   max-width: 760px;
@@ -565,22 +468,26 @@ main {
   margin: 0 0 20px;
 }
 
-/* Sloupec s obrázkem a textem pod úvodem článku */
-.article-section {
-  max-width: 760px;
-  margin: 0 auto 64px;
-  padding: 0 16px;
+.article-tag {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #888;
+  margin-bottom: 4px;
+  display: inline-block;
 }
 
 .article-hero {
-  margin: 16px 0 32px;
+  max-width: 760px;
+  margin: 16px auto 32px;
+  padding: 0 16px;
 }
 
 .article-hero img {
   width: 100%;
   height: auto;
-  border-radius: 10px;
   display: block;
+  border-radius: 10px;
 }
 
 .article-hero figcaption {
@@ -589,7 +496,12 @@ main {
   margin-top: 6px;
 }
 
-/* Text článku */
+.article-section {
+  max-width: 760px;
+  margin: 0 auto 64px;
+  padding: 0 16px;
+}
+
 .article {
   font-size: 16px;
   line-height: 1.6;
@@ -611,46 +523,15 @@ main {
   border-top: 1px solid #eee;
   color: #444;
 }
-/* Obrázek želv v detailu článku */
-.article-hero {
-  max-width: 760px;      /* stejná šířka jako textový sloupec */
-  margin: 16px auto 32px;
-  padding: 0 16px;
-}
 
-.article-hero img {"magic-arena-tmnt.jpg"
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 10px;
-}
-/* Sloupec se zbytkem článku pod obrázkem */
-.article-section {
-  max-width: 760px;
-  margin: 0 auto 64px;
-  padding: 0 16px;
-}
-
-.article {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #111;
-}
-
-.article h2 {
-  font-size: 1.4rem;
-  margin: 28px 0 10px;
-}
-
-.article p {
-  margin-bottom: 12px;
-}
-/* Další články – full width v main */
+/* Další články */
 
 .related-articles {
-  width: 100%;
-  margin: 48px 0 0;
-  padding-top: 28px;
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box;
+  padding: 28px 16px 0;
+  margin-top: 48px;
   border-top: 1px solid #e5e7eb;
 }
 
@@ -713,15 +594,20 @@ main {
   text-decoration: underline;
 }
 
+/* Responzivita */
+
 @media (max-width: 900px) {
+  .getting-started-grid {
+    grid-template-columns: 1fr;
+  }
+
   .related-grid {
     flex-direction: column;
   }
-.related-articles {
-  width: 100% !important;
-  max-width: 100% !important;
-  box-sizing: border-box;
-  padding: 28px 16px 0;
-  margin-top: 48px;
-  border-top: 1px solid #e5e7eb;
+}
+
+@media (max-width: 768px) {
+  .footer-inner {
+    grid-template-columns: 1fr;
+  }
 }
