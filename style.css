@@ -719,3 +719,9 @@ main {
 .related-link:hover {
   text-decoration: underline;
 }
+  .related-articles {
+  width: 100%;
+  margin: 40px 0 0;
+  padding-top: 24px;
+  border-top: 1px solid #e5e7eb;
+}
