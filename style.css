@@ -30,6 +30,9 @@ a:hover {
   text-decoration: underline;
 }
 
+a.read-more {
+  color: #2563eb !important;
+}
 /* Layout stránky */
 
 main {
