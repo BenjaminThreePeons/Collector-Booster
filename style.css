@@ -717,3 +717,11 @@ main {
   .related-grid {
     flex-direction: column;
   }
+.related-articles {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box;
+  padding: 28px 16px 0;
+  margin-top: 48px;
+  border-top: 1px solid #e5e7eb;
+}
