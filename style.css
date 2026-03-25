@@ -645,20 +645,21 @@ main {
 .article p {
   margin-bottom: 12px;
 }
-/* Další články – 3 boxy jako na hlavní straně, jen obrázek + nadpis */
+/* Další články – full width v main */
 
 .related-articles {
-  margin: 40px 0 0;
-  padding-top: 24px;
+  width: 100%;
+  margin: 48px 0 0;
+  padding-top: 28px;
   border-top: 1px solid #e5e7eb;
 }
 
 .related-articles h2 {
   margin: 0 0 20px;
   font-size: 1.4rem;
+  font-family: "Barlow Condensed", system-ui, sans-serif;
 }
 
-/* stejná šířka jako obsah stránky (řídí main { max-width: 1120px }) */
 .related-grid {
   display: flex;
   flex-wrap: wrap;
@@ -683,45 +684,36 @@ main {
   object-fit: cover;
 }
 
+.related-body {
+  padding: 10px 14px 14px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
 .related-title {
-  margin: 10px 14px 14px;
+  margin: 0 0 6px;
   font-family: "Barlow Condensed", system-ui, sans-serif;
   font-size: 18px;
   line-height: 1.3;
   color: #0f172a;
-}
-
-/* Na mobilech pod sebe */
-@media (max-width: 900px) {
-  .related-grid {
-    flex-direction: column;
-  }
-.related-body {
-  padding: 10px 14px 12px;
-}
-
-.related-title {
-  margin: 0 0 4px;
-  font-family: "Barlow Condensed", system-ui, sans-serif;
-  font-size: 16px;
-  line-height: 1.3;
-  color: #0f172a;
+  flex: 1;
 }
 
 .related-link {
   display: inline-block;
-  margin-top: 2px;
-  font-size: 0.8rem;
+  margin-top: 4px;
+  font-size: 0.85rem;
   font-weight: 500;
   color: #2563eb;
   text-decoration: none;
 }
+
 .related-link:hover {
   text-decoration: underline;
 }
-  .related-articles {
-  width: 100%;
-  margin: 40px 0 0;
-  padding-top: 24px;
-  border-top: 1px solid #e5e7eb;
-}
+
+@media (max-width: 900px) {
+  .related-grid {
+    flex-direction: column;
+  }
