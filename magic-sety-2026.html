@@ -10,6 +10,25 @@
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* Klikatelný obrázek a nadpis v related kartě */
+    .related-card-link {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+    }
+    .related-card-link:hover .related-image {
+      opacity: 0.85;
+      transition: opacity 0.2s ease;
+    }
+    .related-card-link:hover .related-title {
+      text-decoration: underline;
+    }
+    .related-image {
+      transition: opacity 0.2s ease;
+    }
+  </style>
 </head>
 <body>
 
@@ -230,43 +249,50 @@
       </article>
     </section>
 
+    <!-- DALŠÍ KLASICKÉ ČLÁNKY -->
     <section class="related-articles">
       <h2>Další články</h2>
       <div class="related-grid">
 
         <article class="related-card">
-          <img src="img/magic-arena-tmnt.jpg"
-               alt="MTG Arena – TMNT Sealed"
-               class="related-image">
-          <div class="related-body">
+          <a href="arena-tmnt-sealed.html" class="related-card-link">
+            <img src="img/magic-arena-tmnt.jpg"
+                 alt="MTG Arena – TMNT Sealed"
+                 class="related-image">
             <h3 class="related-title">
               MTG Arena: jak vytěžit TMNT Sealed na maximum
             </h3>
-            <a href="arena-tmnt-sealed.html" class="related-link">Přejít na článek</a>
+          </a>
+          <div class="related-body">
+            <a href="arena-tmnt-sealed.html" class="related-link">Číst více</a>
           </div>
         </article>
 
         <article class="related-card">
-          <img src="img/magic-investice.png"
-               alt="Top 5 MTG karet s největším růstem ceny"
-               class="related-image">
-          <div class="related-body">
+          <a href="#" class="related-card-link">
+            <img src="img/magic-investice.png"
+                 alt="Top 5 MTG karet s největším růstem ceny"
+                 class="related-image">
             <h3 class="related-title">
               Top 5 MTG karet s největším růstem ceny na začátku roku 2026
             </h3>
-            <a href="#" class="related-link">Přejít na článek</a>
+          </a>
+          <div class="related-body">
+            <a href="#" class="related-link">Číst více</a>
           </div>
         </article>
 
         <article class="related-card">
-          <img src="img/magic-secrets.png"
-               alt="Secrets of Strixhaven"
-               class="related-image">
-          <div class="related-body">
+          <a href="#" class="related-card-link">
+            <img src="img/magic-secrets.png"
+                 alt="Secrets of Strixhaven"
+                 class="related-image">
             <h3 class="related-title">
               Secrets of Strixhaven: všechno, co potřebuješ vědět + 10 nejzajímavějších karet
             </h3>
-            <a href="#" class="related-link">Přejít na článek</a>
+          </a>
+          <div class="related-body">
+            <a href="#" class="related-link">Číst více</a>
           </div>
         </article>
 
