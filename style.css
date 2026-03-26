@@ -33,6 +33,7 @@ a:hover {
 a.read-more {
   color: #2563eb !important;
 }
+
 /* Layout stránky */
 
 main {
@@ -240,7 +241,7 @@ main {
   line-height: 1.25;
   color: #0f172a;
   flex: 0 0 auto;
-  height: 4em;              /* pevná výška – všechny nadpisy stejně vysoké */
+  height: 4em;
   overflow: hidden;
 }
 
@@ -534,6 +535,7 @@ main {
 .article p {
   margin-bottom: 12px;
 }
+
 .article-table {
   width: 100%;
   border-collapse: collapse;
@@ -600,11 +602,29 @@ main {
   flex-direction: column;
 }
 
+/* Klikatelná část related karty (obrázek + nadpis) */
+
+.related-card-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.related-card-link:hover .related-image {
+  opacity: 0.85;
+}
+
+.related-card-link:hover .related-title {
+  text-decoration: underline;
+}
+
 .related-image {
   width: 100%;
   height: auto;
   display: block;
   object-fit: cover;
+  transition: opacity 0.2s ease;
 }
 
 .related-body {
@@ -621,6 +641,7 @@ main {
   line-height: 1.3;
   color: #0f172a;
   flex: 1;
+  padding: 10px 14px 0;
 }
 
 .related-link {
