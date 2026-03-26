@@ -657,6 +657,20 @@ main {
   text-decoration: underline;
 }
 
+/* Klikatelný nadpis v teaser kartě */
+.teaser-title-link {
+  margin: 0 0 0;
+  font-family: "Barlow Condensed", system-ui, sans-serif;
+  font-size: 20px;
+  line-height: 1.25;
+  color: #0f172a;
+  padding: 12px 18px 0;
+}
+
+.related-card-link:hover .teaser-title-link {
+  text-decoration: underline;
+}
+
 /* Responzivita */
 
 @media (max-width: 900px) {
