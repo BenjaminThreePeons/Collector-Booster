@@ -594,15 +594,13 @@ main {
 .related-card {
   flex: 1 1 0;
   min-width: 0;
-  background: #ffffff;
+  background: #020617;
   border-radius: 18px;
   overflow: hidden;
-  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.16);
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.4);
   display: flex;
   flex-direction: column;
 }
-
-/* Klikatelná část related karty (obrázek + nadpis) */
 
 .related-card-link {
   display: block;
@@ -628,20 +626,26 @@ main {
 }
 
 .related-body {
-  padding: 10px 14px 14px;
+  padding: 16px 18px 18px;
   display: flex;
   flex-direction: column;
   flex: 1;
 }
 
 .related-title {
-  margin: 0 0 6px;
+  margin: 0 0 8px;
   font-family: "Barlow Condensed", system-ui, sans-serif;
   font-size: 18px;
   line-height: 1.3;
-  color: #0f172a;
+  color: #ffffff;
   flex: 1;
-  padding: 10px 14px 0;
+}
+
+.related-body p {
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: #b0b8cc;
+  margin-bottom: 12px;
 }
 
 .related-link {
@@ -649,7 +653,7 @@ main {
   margin-top: 4px;
   font-size: 0.85rem;
   font-weight: 500;
-  color: #2563eb;
+  color: #93c5fd;
   text-decoration: none;
 }
 
@@ -668,37 +672,6 @@ main {
 }
 
 .related-card-link:hover .teaser-title-link {
-  text-decoration: underline;
-}
-/* Related cards – tmavý styl jako na hlavní stránce */
-.related-articles .related-card {
-  background-color: #1a1f2e;
-  border-radius: 12px;
-  padding: 24px;
-  color: #ffffff;
-}
-
-.related-articles .related-card .related-title {
-  color: #ffffff;
-  font-size: 1.05rem;
-  margin-bottom: 10px;
-}
-
-.related-articles .related-card p {
-  color: #b0b8cc;
-  font-size: 0.9rem;
-  line-height: 1.55;
-  margin-bottom: 16px;
-}
-
-.related-articles .related-card .related-link {
-  color: #5b9cf6;
-  font-weight: 600;
-  text-decoration: none;
-  font-size: 0.9rem;
-}
-
-.related-articles .related-card .related-link:hover {
   text-decoration: underline;
 }
 
