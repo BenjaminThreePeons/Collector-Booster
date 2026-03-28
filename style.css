@@ -670,6 +670,37 @@ main {
 .related-card-link:hover .teaser-title-link {
   text-decoration: underline;
 }
+/* Related cards – tmavý styl jako na hlavní stránce */
+.related-articles .related-card {
+  background-color: #1a1f2e;
+  border-radius: 12px;
+  padding: 24px;
+  color: #ffffff;
+}
+
+.related-articles .related-card .related-title {
+  color: #ffffff;
+  font-size: 1.05rem;
+  margin-bottom: 10px;
+}
+
+.related-articles .related-card p {
+  color: #b0b8cc;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  margin-bottom: 16px;
+}
+
+.related-articles .related-card .related-link {
+  color: #5b9cf6;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.related-articles .related-card .related-link:hover {
+  text-decoration: underline;
+}
 
 /* Responzivita */
 
