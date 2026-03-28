@@ -297,6 +297,8 @@ main {
 
 .getting-started-card h3 {
   font-size: 1.1rem;
+  font-family: "Barlow Condensed", system-ui, sans-serif;
+  font-weight: 700;
   margin-bottom: 8px;
 }
 
