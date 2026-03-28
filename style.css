@@ -647,13 +647,13 @@ main {
 }
 
 .related-card.dark .related-title {
-  color: #ffffff;
+  margin: 0 0 4px; /* změna z 8px na 4px — menší mezera pod nadpisem */
 }
 
 .related-card.dark .related-body p {
   font-size: 0.9rem;
   line-height: 1.55;
-  color: #b0b8cc;
+  color: #ffffff; /* změna z #b0b8cc na bílou */
   margin-bottom: 12px;
 }
 
@@ -667,7 +667,7 @@ main {
 }
 
 .related-card.dark .related-link {
-  color: #93c5fd;
+  color: #2563eb; /* změna z #93c5fd na stejnou modrou jako ostatní */
 }
 
 .related-link:hover {
