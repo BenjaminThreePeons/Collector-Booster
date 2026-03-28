@@ -645,8 +645,6 @@ main {
   font-size: 18px;
   line-height: 1.3;
   color: #0f172a;
-  height: 2.6em;
-  overflow: hidden;
 }
 
 .related-card.dark .related-title {
