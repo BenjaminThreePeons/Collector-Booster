@@ -638,7 +638,7 @@ main {
 
 /* Nadpis v kartách (hlavní i related) */
 .related-title {
-  margin: 0 0 4px;
+  margin: 0 0 6px; /* mezera pod nadpisem */
   font-family: "Barlow Condensed", system-ui, sans-serif;
   font-size: 18px;
   line-height: 1.3;
@@ -654,7 +654,19 @@ main {
   font-size: 0.9rem;
   line-height: 1.55;
   color: #ffffff;
-  margin-bottom: 12px;
+  margin: 0 0 12px;
+}
+
+/* Klikatelný nadpis (obal <a>) */
+.related-title-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  margin-bottom: 6px; /* mezera mezi nadpisem a popisem / tlačítkem */
+}
+
+.related-title-link:hover .related-title {
+  text-decoration: underline;
 }
 
 /* "Číst více" */
