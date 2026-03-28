@@ -647,7 +647,9 @@ main {
 }
 
 .related-card.dark .related-title {
-  margin: 0 0 4px; /* změna z 8px na 4px — menší mezera pod nadpisem */
+  color: #ffffff;
+  margin: 0 0 4px;
+  height: auto; /* zruší pevnou výšku, která způsobovala ořez textu */
 }
 
 .related-card.dark .related-body p {
