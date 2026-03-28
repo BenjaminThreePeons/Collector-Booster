@@ -225,24 +225,21 @@ main {
   flex: 1;
 }
 
+/* Rubrika pod hero (NOVINKY, MTG ARENA) – skrytá */
 .teaser-tag {
-  display: inline-block;
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  color: #6b7280;
-  margin-bottom: 4px;
+  display: none;
 }
 
+/* Nadpis teaser karet */
 .teaser-card h2 {
-  margin: 0 0 8px;
+  margin: 0 0 6px;
   font-family: "Barlow Condensed", system-ui, sans-serif;
   font-size: 20px;
   line-height: 1.25;
   color: #0f172a;
   flex: 0 0 auto;
-  height: 4em;
-  overflow: hidden;
+  /* height: 4em;         odstraněno, aby se nic neořezávalo */
+  /* overflow: hidden;    odstraněno */
 }
 
 .teaser-card .teaser-body .read-more {
@@ -300,7 +297,7 @@ main {
   font-family: "Barlow Condensed", system-ui, sans-serif;
   font-weight: 700;
   margin-bottom: 8px;
-  margin-top: 0; /* ← přidej tento řádek */
+  margin-top: 0;
 }
 
 .getting-started-card p {
@@ -639,8 +636,9 @@ main {
   flex: 1;
 }
 
+/* Nadpis v kartách (hlavní i related) */
 .related-title {
-  margin: 0 0 8px;
+  margin: 0 0 4px;
   font-family: "Barlow Condensed", system-ui, sans-serif;
   font-size: 18px;
   line-height: 1.3;
@@ -649,17 +647,17 @@ main {
 
 .related-card.dark .related-title {
   color: #ffffff;
-  margin: 0 0 4px;
-  height: auto; /* zruší pevnou výšku, která způsobovala ořez textu */
 }
 
+/* Text v dark boxech */
 .related-card.dark .related-body p {
   font-size: 0.9rem;
   line-height: 1.55;
-  color: #ffffff; /* změna z #b0b8cc na bílou */
+  color: #ffffff;
   margin-bottom: 12px;
 }
 
+/* "Číst více" */
 .related-link {
   display: inline-block;
   margin-top: auto;
@@ -670,15 +668,14 @@ main {
 }
 
 .related-card.dark .related-link {
-  color: #2563eb; /* změna z #93c5fd na stejnou modrou jako ostatní */
+  color: #2563eb;
 }
 
 .related-link:hover {
   text-decoration: underline;
 }
 
-/* Klikatelný nadpis v teaser kartě */
-
+/* Klikatelný nadpis v teaser kartě (když ho používáš) */
 .teaser-title-link {
   margin: 0;
   font-family: "Barlow Condensed", system-ui, sans-serif;
