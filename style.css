@@ -300,6 +300,7 @@ main {
   font-family: "Barlow Condensed", system-ui, sans-serif;
   font-weight: 700;
   margin-bottom: 8px;
+  margin-top: 0; /* ← přidej tento řádek */
 }
 
 .getting-started-card p {
