@@ -599,8 +599,8 @@ main {
   border-radius: 18px;
   overflow: hidden;
   box-shadow: 0 12px 30px rgba(15, 23, 42, 0.16);
-  display: grid;
-  grid-template-rows: 180px 1fr;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Tmavá varianta – série Jak začít */
@@ -632,6 +632,7 @@ main {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
+  flex-shrink: 0;
 }
 
 .related-card-link:hover .related-image {
@@ -652,26 +653,32 @@ main {
 
 .related-body {
   padding: 14px 16px 16px;
-  display: grid;
-  grid-template-rows: 1fr auto;
-  gap: 8px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .related-title {
-  margin: 0;
+  margin: 0 0 8px;
   font-family: "Barlow Condensed", system-ui, sans-serif;
   font-size: 18px;
   line-height: 1.3;
   color: #0f172a;
+  flex: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .related-link {
   display: inline-block;
-  margin-top: auto;
+  margin-top: 12px;
   font-size: 0.85rem;
   font-weight: 500;
   color: #2563eb;
   text-decoration: none;
+  flex-shrink: 0;
 }
 
 .related-link:hover {
