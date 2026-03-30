@@ -700,6 +700,27 @@ main {
 .related-card-link:hover .teaser-title-link {
   text-decoration: underline;
 }
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.section-more-link {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+  white-space: nowrap;
+}
+
+.section-more-link:hover {
+  opacity: 1;
+}
 
 /* Responzivita */
 
