@@ -745,7 +745,11 @@ main {
 .section-divider {
   border: none;
   border-top: 1px solid #e0e0e0;
-  margin: 0;
+  margin: 0;          /* žádný margin na hr samotné */
+}
+
+.beginners-section {
+  padding-top: 32px;  /* zmenši podle chuti, výchozí bývá 60–80px */
 }
 
 /* Responzivita */
