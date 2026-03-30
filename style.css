@@ -748,19 +748,14 @@ main {
   margin: 0;          /* žádný margin na hr samotné */
 }
 
-/* mezera mezi čárou a sekcí */
-.beginners-section {
-  padding-top: 24px !important;
-  margin-top: 0 !important;
+/* mezera mezi čárou a nadpisem */
+.getting-started-section {
+  padding-top: 24px;
 }
 
-/* mezera mezi nadpisem a boxy */
+/* mezera mezi nadpisem+odkazem a boxy */
 .section-header {
-  margin-bottom: 16px !important;
-}
-
-.beginners-section h2 {
-  margin-bottom: 0 !important;
+  margin-bottom: 16px;
 }
 /* Responzivita */
 
