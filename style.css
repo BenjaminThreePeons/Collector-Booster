@@ -717,7 +717,6 @@ main {
   transition: opacity 0.2s;
   white-space: nowrap;
   align-self: flex-end;
-  padding-bottom: 2px;
 }
 
 .section-more-link:hover {
