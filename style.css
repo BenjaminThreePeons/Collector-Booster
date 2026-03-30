@@ -704,7 +704,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 1.5rem;
+  margin-bottom: 16px;
 }
 
 .section-more-link {
@@ -752,7 +752,7 @@ main {
   padding-top: 6px;  /* zkus 16px, nebo i méně třeba 8px */
 }
 .beginners-section h2 {
-  margin-top: 6px;
+  margin-bottom: 16px;  /* snižuj podle chuti, výchozí bývá 24–32px */
 }
 
 /* Responzivita */
