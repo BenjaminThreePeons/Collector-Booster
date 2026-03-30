@@ -269,7 +269,7 @@ main {
 
 .getting-started-section {
   max-width: 1120px;
-  margin: 8px auto 32px;  /* bylo 40px, změněno na 16px */
+  margin: 8px auto 64px;  /* bylo 40px, změněno na 16px */
   padding: 0 20px;
 }
 
