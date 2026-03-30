@@ -749,10 +749,10 @@ main {
 }
 
 .beginners-section {
-  padding-top: 10px;  /* zkus 16px, nebo i méně třeba 8px */
+  padding-top: 8px;  /* zkus 16px, nebo i méně třeba 8px */
 }
 .beginners-section h2 {
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 /* Responzivita */
