@@ -1,0 +1,28 @@
+{
+  "slug": "marvel-super-heroes-karty.html",
+  "title": "Magic × Marvel: první pohled na karty, mechaniky a co to znamená pro sběratele",
+  "tag": "Novinky",
+  "perex": "Magic × Marvel je tady: Captain America, Hulk, Galactus i Namor mají své vlastní karty. Ukážeme ti, jak fungují nové mechaniky, které karty sledovat jako sběratel a proč je červen 2026 největší datum v historii Universes Beyond.",
+  "heroImage": "img/magic-marvel-heroes.jpg",
+  "heroAlt": "Magic: The Gathering – Marvel Super Heroes set 2026",
+  "related": [
+    {
+      "href": "rok-2026-v-magicu.html",
+      "img": "img/magic-lineup6.jpg",
+      "alt": "Rok 2026 v Magicu – přehled setů",
+      "title": "Rok 2026 v Magicu: kompletní přehled setů, co letos nesmíš přehlédnout"
+    },
+    {
+      "href": "magic-investice.html",
+      "img": "img/magic-investice.png",
+      "alt": "Top 5 MTG karet s největším růstem ceny",
+      "title": "Top 5 MTG karet s největším růstem ceny na začátku roku 2026"
+    },
+    {
+      "href": "arena-tmnt-sealed.html",
+      "img": "img/magic-arena-tmnt.jpg",
+      "alt": "MTG Arena – TMNT Sealed",
+      "title": "MTG Arena: jak vytěžit TMNT Sealed na maximum"
+    }
+  ]
+}
