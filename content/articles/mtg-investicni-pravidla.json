@@ -1,0 +1,28 @@
+{
+  "slug": "mtg-investicni-pravidla.html",
+  "title": "Jak poznat MTG kartu s investičním potenciálem: 5 pravidel, která fungují",
+  "tag": "Investice",
+  "perex": "Ne každá drahá karta je dobrá investice a ne každá levná karta zůstane levná. Ukážeme ti 5 konkrétních pravidel, podle kterých zkušení sběratelé poznají, která karta má šanci v ceně růst.",
+  "heroImage": "img/magic-investice-pravidla.jpg",
+  "heroAlt": "Investice do Magic: The Gathering karet – jak poznat kartu s potenciálem",
+  "related": [
+    {
+      "href": "fallout-rad-superdrop.html",
+      "img": "img/magic-fallout-rad.jpg",
+      "alt": "Secret Lair x Fallout Rad Superdrop",
+      "title": "Secret Lair × Fallout Rad Superdrop: Lucy, Ghúl a Mothman přicházejí do Magicu"
+    },
+    {
+      "href": "magic-investice.html",
+      "img": "img/magic-investice.png",
+      "alt": "Top 5 MTG karet s největším růstem ceny",
+      "title": "Top 5 MTG karet s největším růstem ceny na začátku roku 2026"
+    },
+    {
+      "href": "marvel-super-heroes-karty.html",
+      "img": "img/magic-marvel-heroes.jpg",
+      "alt": "Magic × Marvel Super Heroes",
+      "title": "Magic × Marvel: první pohled na karty, mechaniky a co to znamená pro sběratele"
+    }
+  ]
+}
