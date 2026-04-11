@@ -846,3 +846,22 @@ main {
   font-size: 1.6rem;
   margin: 0 0 20px;
 }
+/* ===== Oprava šířky spodku článku ===== */
+
+.article-main .related-articles {
+  max-width: 1120px;
+  width: calc(100% + 32px);
+  margin-left: -16px;
+  padding: 28px 16px 0;
+}
+
+.article-main .related-articles .teasers-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.article-main .newsletter-section {
+  width: calc(100% + 32px);
+  margin-left: -16px;
+}
