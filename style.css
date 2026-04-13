@@ -865,3 +865,21 @@ main {
   width: calc(100% + 32px);
   margin-left: -16px;
 }
+/* Všechny články – grid mřížka */
+.all-articles-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 900px) {
+  .all-articles-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .all-articles-grid {
+    grid-template-columns: 1fr;
+  }
+}
