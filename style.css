@@ -883,3 +883,13 @@ main {
     grid-template-columns: 1fr;
   }
 }
+.teaser-image-wrapper {
+  overflow: hidden;
+  height: 200px;
+}
+
+.teaser-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
