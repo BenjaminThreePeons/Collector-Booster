@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pro začátečníky | Collector Booster</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #111;
+      padding: 20px 40px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    section:first-of-type {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 15px;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 25px;
+    }
+
+    p {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    section:last-of-type {
+      margin-top: 30px;
+    }
+
+    section:last-of-type article {
+      background-color: white;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    section:last-of-type article:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    }
+
+    section:last-of-type {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      align-items: start;
+    }
+
+    section:last-of-type h2 {
+      grid-column: 1 / -1;
+      margin-bottom: 10px;
+    }
+
+    article h3 {
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+    }
+
+    article p {
+      margin: 0 0 15px 0;
+    }
+
+    article a {
+      display: inline-block;
+      text-decoration: none;
+      background-color: #111;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    article a:hover {
+      background-color: #333;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Collector Booster</a>
+      <a href="index.html">Zpět na hlavní stránku</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h1>Magic: The Gathering pro začátečníky</h1>
+      <p>
+        Vše, co potřebuješ na začátek — pravidla, typy boosterů, formáty a
+        první kroky ve světě MTG.
+      </p>
+    </section>
+
+    <section>
+  <h2>Články pro začátečníky</h2>
+
+  <article>
+    <h3>Jak začít s Magic: The Gathering</h3>
+    <p>
+      Úplný úvod pro nové hráče — co je Magic, jak probíhá hra a co budeš
+      potřebovat do začátku.
+    </p>
+    <a href="jak-zacit-s-magic.html">Přečíst článek</a>
+  </article>
+
+  <article>
+    <h3>Typy MTG boosterů jednoduše</h3>
+    <p>
+      Vysvětlení rozdílů mezi Play Boostery, Collector Boostery a dalšími
+      produkty bez zbytečně složitých pojmů.
+    </p>
+    <a href="typy-mtg-boosteru.html">Přečíst článek</a>
+  </article>
+
+  <article>
+    <h3>Jak fungují herní formáty</h3>
+    <p>
+      Přehled nejznámějších formátů jako Standard, Commander nebo Modern a
+      pro koho se hodí.
+    </p>
+    <a href="jak-funguji-herni-formaty.html">Přečíst článek</a>
+  </article>
+
+  <article>
+    <h3>Jak poznat vzácnost karet</h3>
+    <p>
+      Nauč se rozpoznat common, uncommon, rare a mythic rare karty a pochop,
+      proč jsou některé cennější než jiné.
+    </p>
+    <a href="jak-poznat-vzacnost-karet.html">Přečíst článek</a>
+  </article>
+
+  <article>
+    <h3>Základní pravidla MTG</h3>
+    <p>
+      Stručný přehled kol, many, útoku, blokování a dalších základů, které
+      potřebuje znát každý začátečník.
+    </p>
+    <a href="zakladni-pravidla-mtg.html">Přečíst článek</a>
+  </article>
+
+  <article>
+    <h3>První nákup pro nového hráče</h3>
+    <p>
+      Co se opravdu vyplatí koupit na začátek a čemu je naopak lepší se
+      vyhnout.
+    </p>
+    <a href="prvni-nakup-pro-noveho-hrace.html">Přečíst článek</a>
+  </article>
+</section>
+  </main>
+</body>
+</html>

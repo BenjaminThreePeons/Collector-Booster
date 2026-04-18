@@ -1,0 +1,28 @@
+{
+  "slug": "magic-hobbit.html",
+  "title": "Magic × The Hobbit: Bilbo, Šmak a Středozemě přicházejí v srpnu 2026",
+  "tag": "Novinky",
+  "perex": "Po úspěchu Lord of the Rings se Magic vrací do Středozemě – tentokrát s Hobbitem. Bilbo Pytlík, Thorin, Šmak i hádanky ve tmě jako plnohodnotné karty. Co víme, co čekat a proč je tohle investičně zajímavý set.",
+  "heroImage": "img/magic-hobbit.jpg",
+  "heroAlt": "Magic: The Gathering × The Hobbit – Universes Beyond srpen 2026",
+  "related": [
+    {
+      "href": "fallout-rad-superdrop.html",
+      "img": "img/magic-fallout-rad.jpg",
+      "alt": "Secret Lair x Fallout Rad Superdrop",
+      "title": "Secret Lair × Fallout Rad Superdrop: Lucy, Ghúl a Mothman přicházejí do Magicu"
+    },
+    {
+      "href": "mtg-investicni-pravidla.html",
+      "img": "img/magic-investice-pravidla.jpg",
+      "alt": "Jak poznat MTG kartu s investičním potenciálem",
+      "title": "Jak poznat MTG kartu s investičním potenciálem: 5 pravidel, která fungují"
+    },
+    {
+      "href": "marvel-super-heroes-karty.html",
+      "img": "img/magic-marvel-heroes.jpg",
+      "alt": "Magic × Marvel Super Heroes",
+      "title": "Magic × Marvel: první pohled na karty, mechaniky a co to znamená pro sběratele"
+    }
+  ]
+}
